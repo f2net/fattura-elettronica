@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// import xml from 'xml';
 const xmlbuilder_1 = __importDefault(require("xmlbuilder"));
 exports.WriteXml = ({ FatturaElettronicaHeader, FatturaElettronicaBody }) => {
     const xmlObject = {

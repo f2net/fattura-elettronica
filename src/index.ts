@@ -1,4 +1,3 @@
-// import xml from 'xml';
 import builder from 'xmlbuilder';
 import { FatturaElettronica } from './FatturaElettronica';
 

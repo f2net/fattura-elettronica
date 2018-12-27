@@ -1,6 +1,6 @@
 {
     "name": "fattura-elettronica",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Modulo per la creazione di fatture elettroniche XML in Javascript.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -21,7 +21,6 @@
         "@types/chai": "^4.1.7",
         "@types/jest": "^23.3.10",
         "@types/node": "^8.10.38",
-        "@types/xml": "^1.0.2",
         "@types/xmlbuilder": "0.0.34",
         "chai": "^4.2.0",
         "jest": "^23.6.0",
@@ -31,7 +30,6 @@
         "typescript": "^3.2.2"
     },
     "dependencies": {
-        "xml": "^1.0.1",
         "xmlbuilder": "^10.1.1"
     }
 }
