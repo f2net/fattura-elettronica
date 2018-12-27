@@ -1,6 +1,6 @@
 {
     "name": "fattura-elettronica",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Modulo per la creazione di fatture elettroniche XML in Javascript.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
