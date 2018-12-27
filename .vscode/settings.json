@@ -1,0 +1,20 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.formatOnSave": true,
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.graphqlEnable": ["graphql"],
+    "prettier.printWidth": 120,
+    "[handlebars]": {
+        "editor.formatOnSave": false
+    }
+}

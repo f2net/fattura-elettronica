@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Tabelle/Provincia.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/Tabelle</a> Provincia.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>111/111</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>111/111</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">﻿export enum Provincia {
+    AG = 'AG', // Agrigento
+    AL = 'AL', // Alessandria
+    AN = 'AN', // Ancona
+    AO = 'AO', // Aosta
+    AQ = 'AQ', // L'Aquila
+    AR = 'AR', // Arezzo
+    AP = 'AP', // Ascoli-Piceno
+    AT = 'AT', // Asti
+    AV = 'AV', // Avellino
+    BA = 'BA', // Bari
+    BT = 'BT', // Barletta-Andria-Trani
+    BL = 'BL', // Belluno
+    BN = 'BN', // Benevento
+    BG = 'BG', // Bergamo
+    BI = 'BI', // Biella
+    BO = 'BO', // Bologna
+    BZ = 'BZ', // Bolzano
+    BS = 'BS', // Brescia
+    BR = 'BR', // Brindisi
+    CA = 'CA', // Cagliari
+    CL = 'CL', // Caltanissetta
+    CB = 'CB', // Campobasso
+    CI = 'CI', // Carbonia Iglesias
+    CE = 'CE', // Caserta
+    CT = 'CT', // Catania
+    CZ = 'CZ', // Catanzaro
+    CH = 'CH', // Chieti
+    CO = 'CO', // Como
+    CS = 'CS', // Cosenza
+    CR = 'CR', // Cremona
+    KR = 'KR', // Crotone
+    CN = 'CN', // Cuneo
+    EN = 'EN', // Enna
+    FM = 'FM', // Fermo
+    FE = 'FE', // Ferrara
+    FI = 'FI', // Firenze
+    FG = 'FG', // Foggia
+    FC = 'FC', // Forli-Cesena
+    FR = 'FR', // Frosinone
+    GE = 'GE', // Genova
+    GO = 'GO', // Gorizia
+    GR = 'GR', // Grosseto
+    IM = 'IM', // Imperia
+    IS = 'IS', // Isernia
+    SP = 'SP', // La-Spezia
+    LT = 'LT', // Latina
+    LE = 'LE', // Lecce
+    LC = 'LC', // Lecco
+    LI = 'LI', // Livorno
+    LO = 'LO', // Lodi
+    LU = 'LU', // Lucca
+    MC = 'MC', // Macerata
+    MN = 'MN', // Mantova
+    MS = 'MS', // Massa-Carrara
+    MT = 'MT', // Matera
+    VS = 'VS', // Medio Campidano
+    ME = 'ME', // Messina
+    MI = 'MI', // Milano
+    MO = 'MO', // Modena
+    MB = 'MB', // Monza-Brianza
+    NA = 'NA', // Napoli
+    NO = 'NO', // Novara
+    NU = 'NU', // Nuoro
+    OG = 'OG', // Ogliastra
+    OT = 'OT', // Olbia Tempio
+    OR = 'OR', // Oristano
+    PD = 'PD', // Padova
+    PA = 'PA', // Palermo
+    PR = 'PR', // Parma
+    PV = 'PV', // Pavia
+    PG = 'PG', // Perugia
+    PU = 'PU', // Pesaro-Urbino
+    PE = 'PE', // Pescara
+    PC = 'PC', // Piacenza
+    PI = 'PI', // Pisa
+    PT = 'PT', // Pistoia
+    PN = 'PN', // Pordenone
+    PZ = 'PZ', // Potenza
+    PO = 'PO', // Prato
+    RG = 'RG', // Ragusa
+    RA = 'RA', // Ravenna
+    RC = 'RC', // Reggio-Calabria
+    RE = 'RE', // Reggio-Emilia
+    RI = 'RI', // Rieti
+    RN = 'RN', // Rimini
+    RM = 'RM', // Roma
+    RO = 'RO', // Rovigo
+    SA = 'SA', // Salerno
+    SS = 'SS', // Sassari
+    SV = 'SV', // Savona
+    SI = 'SI', // Siena
+    SR = 'SR', // Siracusa
+    SO = 'SO', // Sondrio
+    TA = 'TA', // Taranto
+    TE = 'TE', // Teramo
+    TR = 'TR', // Terni
+    TO = 'TO', // Torino
+    TP = 'TP', // Trapani
+    TN = 'TN', // Trento
+    TV = 'TV', // Treviso
+    TS = 'TS', // Trieste
+    UD = 'UD', // Udine
+    VA = 'VA', // Varese
+    VE = 'VE', // Venezia
+    VB = 'VB', // Verbania
+    VC = 'VC', // Vercelli
+    VR = 'VR', // Verona
+    VV = 'VV', // Vibo-Valentia
+    VI = 'VI', // Vicenza
+    VT = 'VT', // Viterbo
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Dec 27 2018 15:17:44 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

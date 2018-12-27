@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug /src/server.ts",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceRoot}/src/server.ts"],
+            "runtimeExecutable": "${workspaceRoot}/scripts/bunyan.sh",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "env": {
+                "NODE_ENV": "development",
+                "PORT": "8081",
+                "TS_NODE_FILES": "true",
+                "ENGINE_API_KEY": "service:malpensago-graphql:HLKp8ME7SIxmJxuBdGFSFQ"
+            },
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug Jest Tests",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--inspect-brk",
+                "${workspaceRoot}/node_modules/.bin/jest",
+                "--runInBand",
+                "--forceExit",
+                "--verbose",
+                "--runInBand"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "PORT": "8082"
+            },
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "protocol": "inspector"
+        }
+    ],
+    "compounds": []
+}

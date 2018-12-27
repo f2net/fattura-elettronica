@@ -1,0 +1,33 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var CausalePagamento;
+(function (CausalePagamento) {
+    CausalePagamento["A"] = "A";
+    CausalePagamento["B"] = "B";
+    CausalePagamento["C"] = "C";
+    CausalePagamento["D"] = "D";
+    CausalePagamento["E"] = "E";
+    CausalePagamento["G"] = "G";
+    CausalePagamento["H"] = "H";
+    CausalePagamento["I"] = "I";
+    CausalePagamento["L"] = "L";
+    CausalePagamento["M"] = "M";
+    CausalePagamento["N"] = "N";
+    CausalePagamento["O"] = "O";
+    CausalePagamento["P"] = "P";
+    CausalePagamento["Q"] = "Q";
+    CausalePagamento["R"] = "R";
+    CausalePagamento["S"] = "S";
+    CausalePagamento["T"] = "T";
+    CausalePagamento["U"] = "U";
+    CausalePagamento["V"] = "V";
+    CausalePagamento["W"] = "W";
+    CausalePagamento["X"] = "X";
+    CausalePagamento["Y"] = "Y";
+    CausalePagamento["Z"] = "Z";
+    CausalePagamento["L1"] = "L1";
+    CausalePagamento["M1"] = "M1";
+    CausalePagamento["O1"] = "O1";
+    CausalePagamento["V1"] = "V1";
+})(CausalePagamento = exports.CausalePagamento || (exports.CausalePagamento = {}));
+//# sourceMappingURL=CausalePagamento.js.map
