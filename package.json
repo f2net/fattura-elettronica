@@ -4,6 +4,10 @@
     "description": "Modulo per la creazione di fatture elettroniche XML in Javascript.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/f2net/fattura-elettronica.git"
+    },
     "scripts": {
         "test": "NODE_ENV=development jest --forceExit --verbose --detectOpenHandles",
         "build": "tsc",
@@ -12,6 +16,7 @@
     },
     "author": "Dario Ronzoni",
     "license": "BSD",
+    "homepage": "https://github.com/f2net/fattura-elettronica.git",
     "devDependencies": {
         "@types/chai": "^4.1.7",
         "@types/jest": "^23.3.10",
