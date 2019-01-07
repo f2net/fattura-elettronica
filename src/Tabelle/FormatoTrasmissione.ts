@@ -1,4 +1,4 @@
 ﻿export enum FormatoTrasmissione {
-    PubblicaAmministrazione = 'FPA 12', // Fattura verso la PA
-    Privati = 'FPR 12', // Fattura verso privati
+    PubblicaAmministrazione = 'FPA12', // Fattura verso la PA
+    Privati = 'FPR12', // Fattura verso privati
 }
